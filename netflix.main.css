@@ -1,0 +1,135 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+:root {
+  --color-white-home: #fff;
+  --color-white: #e5e5e5;
+  --color-red: #e50914;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0 4%;
+}
+
+.background-img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.logo {
+  color: var(--color-red);
+  align-items: center;
+  font-size: 1.8em;
+  font-weight: 800;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.gnb {
+  display: flex;
+  position: fixed;
+  margin-top: 0;
+  height: 68px;
+  align-items: center;
+  width: 100vw;
+  background-color: transparent;
+  
+  
+}
+
+.gnb-menu {
+  font-size: 14px;
+  padding: 0 4%;
+  gap: 15px;
+}
+
+.gnb-menu-item-home {
+  color: var(--color-white-home);
+  font-weight: 500;
+}
+
+.gnb-menu-item {
+  color: var(--color-white);
+}
+
+.gnb-menu2 {
+  display: flex;
+  color: var(--color-white-home);
+  margin-left: auto;
+  gap: 15px;
+}
+
+.banner {
+  margin-top: 120px;
+}
+
+.discription {
+  color: var(--color-white-home);
+  font-size: 1.2vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+  margin-top: 25px;
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons-whitebutton {
+  color: black;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 900;
+  border: transparent;
+}
+
+.buttons-graybutton {
+  color: white;
+  background-color: rgba(109, 109, 110, 0.7);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 900;
+  border: transparent;
+}
+
+.agelimit {
+  position: absolute;
+  right: 0;
+  width: 85px;
+  height: 35px;
+  border: 3px #dcdcdc;
+  border-left-style: solid;
+  box-sizing: border-box;
+  background-color: rgba(51, 51, 51, 0.6);
+  display: flex;
+}
+
+.agebox {
+  background-color: rgb(225, 194, 20);
+  color: black;
+  width: 24px;
+  height: 35px;
+  margin-left: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9%;
+  font-weight: 900;
+  font-size: 28px;
+}
