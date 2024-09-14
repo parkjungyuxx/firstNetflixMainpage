@@ -6,14 +6,16 @@
   --color-white-home: #fff;
   --color-white: #e5e5e5;
   --color-red: #e50914;
+  --color-black: #141414;
 }
 
+body {
+  height: 200%;
+  background-color: var(--color-black);
+}
 .main {
-  width: 100vw;
-  height: 100vh;
   display: flex;
   font-family: "Bebas Neue", sans-serif;
-  padding: 0 4%;
 }
 
 .background-img {
@@ -31,11 +33,13 @@
   align-items: center;
   font-size: 1.8em;
   font-weight: 800;
+  cursor: pointer;
 }
 
 ul {
   list-style: none;
   display: flex;
+  cursor: pointer;
 }
 
 .gnb {
@@ -46,8 +50,8 @@ ul {
   align-items: center;
   width: 100vw;
   background-color: transparent;
-  
-  
+  padding: 0 4%;
+  background: linear-gradient(180deg, rgba(0,0,0,.7),10%,transparent);
 }
 
 .gnb-menu {
@@ -69,11 +73,13 @@ ul {
   display: flex;
   color: var(--color-white-home);
   margin-left: auto;
-  gap: 15px;
+  gap: 18px;
 }
 
 .banner {
+  display: flex;
   margin-top: 120px;
+  padding: 0 4%;
 }
 
 .discription {
@@ -92,11 +98,11 @@ ul {
 .buttons-whitebutton {
   color: black;
   background-color: white;
-  padding: 10px 30px;
+  padding: 8px 35px;
   border-radius: 5px;
   font-size: 18px;
-  font-weight: 900;
   border: transparent;
+  cursor: pointer;
 }
 
 .buttons-graybutton {
@@ -105,12 +111,14 @@ ul {
   padding: 10px 30px;
   border-radius: 5px;
   font-size: 18px;
-  font-weight: 900;
   border: transparent;
+  cursor: pointer;
 }
 
 .agelimit {
+  display: flex;
   position: absolute;
+  margin-top: 350px;
   right: 0;
   width: 85px;
   height: 35px;
@@ -118,7 +126,6 @@ ul {
   border-left-style: solid;
   box-sizing: border-box;
   background-color: rgba(51, 51, 51, 0.6);
-  display: flex;
 }
 
 .agebox {
@@ -132,4 +139,32 @@ ul {
   border-radius: 9%;
   font-weight: 900;
   font-size: 28px;
+}
+
+.gnb-menu2 > i {
+  line-height: 36px;
+}
+
+.video-list {
+ padding: 40px 4%;
+}
+
+.recommand {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--color-white);
+  font-size: 18px;
+
+}
+
+.category1 {
+  display: flex;
+  margin-top: 12px;
+  gap: 5px;
+}
+
+.videoimg {
+  border-radius: 2%;
+  width: 240px;
+  height: 132px;
+
 }
